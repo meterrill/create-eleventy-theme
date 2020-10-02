@@ -56,12 +56,15 @@
                     </div>
                 </div>
             </div>
-        </header>    <div class="page-title sp" style="background-image: url({{ backgroundImage }})">
-    <div class="container text-center">
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-    </div>
-</div>
+        </header>    
+				{% block pageHeader %}
+					<div class="page-title sp" style="background-image: url({{ backgroundImage }})">
+						<div class="container text-center">
+							<h2>{{ title }}</h2>
+							<p>{{ description }}</p>
+						</div>
+					</div>
+				{% endblock pageHeader %}
 
 {% block content %}
   {{ content | safe }}
