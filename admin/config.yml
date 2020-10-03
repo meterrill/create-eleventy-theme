@@ -24,5 +24,27 @@ collections:
         name: "image",
         widget: "image"
       }
+  - name: "services"
+    label: "Services"
+    folder: "services"
+    create: true
+    slug: {{ slug }}
+    fields:
+      - {
+        label: "Title",
+        name: "title",
+        widget: "string"
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string"
+      }
+      - {
+        label: "FA Icon",
+        name: "faIcon",
+        widget: "string"
+      }
 
 media_folder: "/_site/assets/img" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/img" # The src attribute for uploaded media will begin with /images/uploads
