@@ -1,5 +1,5 @@
 ---
-title: Video Editing
+title: Video Making
 description: Lorem ipsum dolor amet sum
-faIcon: magic
+faIcon: film
 ---
