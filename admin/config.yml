@@ -46,6 +46,33 @@ collections:
         name: "faIcon",
         widget: "string"
       }
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/testimonials"
+    create: true
+    identifier_field: name
+    slug: "{{ slug }}"
+    fields:
+      - {
+        label: "Name",
+        name: "name",
+        widget: "string"
+      }
+      - {
+        label: "Quote",
+        name: "quote",
+        widget: "string"
+      }
+      - {
+        label: "Job Title",
+        name: "jobTitle",
+        widget: "string"
+      }
+      - {
+        label: "Headshot",
+        name: "headshot",
+        widget: "image"
+      }
 
 media_folder: "/_site/assets/img" # Media files will be stored in the repo under images/uploads
 public_folder: "/assets/img" # The src attribute for uploaded media will begin with /images/uploads
